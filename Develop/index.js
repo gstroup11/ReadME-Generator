@@ -1,10 +1,10 @@
-// TODO: Include packages needed for this application
+//consts for necessary packages to run the readme program, dont move
 const fs = require('fs');
 const path = require('path');
 const inquirer = require('inquirer');
 const markdownGenerator = require('./utils/generateMarkdown');
 
-// TODO: Create an array of questions for user input
+//Questions Array for inquirer package.
 const questions = [
     {
         type: 'input',
@@ -54,16 +54,16 @@ const questions = [
     },
 ];
 
-// TODO: Create a function to write README file
+// function to write to the ReadME, puts info into the readme
 function writeToFile(fileName, data) {
-    return fs.writeFileSync(path.join(process.cwd(), fileName), data); //From reference
+    return fs.writeFileSync(path.join(process.cwd(), fileName), data); //From bootcampspot
 }
 
-// TODO: Create a function to initialize app
+// this function initializes the application; will trigger from finishing questions
 function init() {
-    inquirer.prompt(questions).then((inquirerResponses) => {
-        console.log('Generating README.md.....');
-        writeToFile('README.md', markdownGenerator({...inquirerResponses}));
+    inquirer.prompt(questions).then((inquirerResponses) => { //from questions to the responses
+        console.log('Generating README.md.....');  //logs when the function is runnning
+        writeToFile('README.md', markdownGenerator({...inquirerResponses})); //makes readme from the responses
     });
 }
 
