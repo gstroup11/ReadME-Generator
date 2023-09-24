@@ -28,6 +28,10 @@
 
   The main intent of this application is to create a README.  To start this make sure you have the necessary dependancies from the install section.  Once you complete that section you can then begin to run the application as it is fairly simple.  Run *node index.js* in your terminal and then you will be prompted with a series of questions.  Fill them out to your liking and then press enter.  You should then have a README file generated within your main directory.  You can then edit this from there or leave it as you made it!  The world is yours.  If you like visual aid here is a video demonstrating the usage of the application.
 
+  ![Demonstration Video](./assets/videos/demonstration.gif)
+
+  Or view it here: https://drive.google.com/file/d/1vms57xo0Zd_x6aRWmWugENTM49TPF_iT/view
+  
   ## License
 
   This project is licensed under the MIT license.
